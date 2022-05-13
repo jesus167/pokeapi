@@ -7,8 +7,37 @@
   position: relative;
   display: block;
   border: 1px solid black;
+  border-radius: 5px;
   width: 200px;
-  height: 200px;
+  height: 300px;
   padding: 20px;
   margin: 20px;
+  background: rgb(117, 103, 103);
 }
+#pokemon_uno{
+  display: flex;
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+  animation: pokemon 5s ease infinite alternate;
+}
+@keyframes pokemon {
+  0%{
+    transform: translateY(0);
+  }
+  50%{
+    transform: translateY(1rem);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+#pokemon_uno_boton{
+  width: 100px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.586);
+  border-radius: 2px;
+  box-shadow: 0 0 5px #000;
+  color: aliceblue;
+}
+
